@@ -1,4 +1,4 @@
-estudiantes=[
+est = [
     {"Nombre": "Carlos", "Calificacion": 70},
     {"Nombre": "Roberto", "Calificacion": 72},
     {"Nombre": "Mario", "Calificacion": 65},
@@ -11,25 +11,27 @@ estudiantes=[
     {"Nombre": "Gabriel", "Calificacion": 37}
     ]
 
-calificaciones_max=max(estudiantes, key=lambda x: x ["Calificacion"])
-nombre_max=max(estudiantes, key=lambda x: x ["Calificacion"])["Nombre"]
-calificaciones_min=min (estudiantes, key=lambda x: x ["Calificacion"])
-nombre_min=min(estudiantes, key=lambda x: x ["Calificacion"])["Nombre"]
+calificaciones_max = max(est, key=lambda x: x ["Calificacion"])
+nombre_max = max(est, key=lambda x: x ["Calificacion"])["Nombre"]
+calificaciones_min = min (est, key=lambda x: x ["Calificacion"])
+nombre_min = min(est, key=lambda x: x ["Calificacion"])["Nombre"]
 
-Reprobados=0
-Aprobados=0
-total=0
+total = 0
+apro = 0
+rpro = 0
 
-for g in estudiantes:
-    total+=g["Calificacion"]
-    if g["Calificacion"] >=60:
-        Aprobados+=1
+for f in est:
+    total += f["Calificacion"]
+    if f["Calificacion"] >= 60:
+        apro += 1
     else:
-        Reprobados+=1
-promedio=total/10
+        rpro += 1
+
+promedio = total / len(est)
+
 print(f'''La estudiante {nombre_max} tiene la nota mas alta con: {calificaciones_max["Calificacion"]} \n
 El estudiante {nombre_min} tiene la nota mas baja con: {calificaciones_min["Calificacion"]}''')
 
 print(f'''El promedio general de la clase es de: {promedio}\n
-El total de estudiantes aprobados es de: {Aprobados}\n
-El total de estudiantes reprobados es de: {Reprobados}\n''')
+El total de est aprobados es de: {apro}\n
+El total de est reprobados es de: {rpro}\n''')
