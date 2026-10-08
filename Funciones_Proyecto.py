@@ -134,11 +134,11 @@ def verificar_id_libro_existencia(libros,mensaje):
 def s_n(mensaje):
     while True:
         res=input(mensaje).lower()
-        if res == 's' or res == 'n':
-            if res == 's':
+        if res == 's' or res == 'n' or res == 'si' or res == 'no':
+            if res == 's' or res == 'si':
                 return True
-            if res == 'n':
+            if res == 'n' or res == 'no':
                 return False
         else:
-            print('ERROR: Solo se acepta S o N como respuesta!!!')
+            print('ERROR: Solo se acepta Si o No como respuesta!!!')
 #___________________________________________________________________________________________________________________________
