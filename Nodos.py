@@ -1,4 +1,3 @@
-import Funciones_Proyecto as fp
 import numpy as np
 
 #  Clases para la estructura de un nodo y una lista  enlazada

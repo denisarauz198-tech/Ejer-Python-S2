@@ -12,7 +12,7 @@ def menus():
         print('='*40)
         print('Operaciones:')
         print('='*40)
-        print('1. Incertar nodo al inicio.')
+        print('1. Incertar multiples nodos al inicio.')
         print('2. Incertar nodo al final.')
         print('3. Ver si existe un nodo.')
         print('4. Mostrar los nodos.')
@@ -25,11 +25,15 @@ def menus():
         match operacion:
             
             case 1:
-                nodo = fp.valor_numerico('Ingrese el nuevo nodo: ')
-                lista.insertar_inicio(valor= nodo)
+                c_nodos = fp.valor_numerico('Ingrese la cantidad de nodos que desea agregar: ')
                 print('='*40)
-                print('Insertado al inicio con Exito!!!')
-                print('='*40)
+                for i in range(c_nodos):
+                    i+=1
+                    nodo = fp.valor_numerico(f'Ingrese el nodo {i}: ')
+                    lista.insertar_inicio(valor= nodo)
+                    print('='*40)
+                    print('Insertado al inicio con Exito!!!')
+                    print('='*40)
                 
                 if fp.s_n('Desea realizar otra operaion: ') != True:
                     break
@@ -74,7 +78,7 @@ def menus():
                     continue
                 
             case 5:
-                nodo = fp.valor_numerico('Ingrese el nuevo nodo: ')
+                nodo = fp.valor_numerico('Ingrese el valor del nodo: ')
                 lista.eliminar(valor= nodo)
                 print('='*40)
                 print('Eliminado con Exito!!!')

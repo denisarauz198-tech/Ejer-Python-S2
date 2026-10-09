@@ -32,11 +32,11 @@ def texto_con_guiones(mensaje):
 #___________________________________________________________________________________________________________________________
 def validar_Fecha(mensaje):
     while True:
-        Fecha=texto_con_guiones(mensaje)
-        if len(Fecha) != 10 or Fecha[2] != '-' or Fecha[5] != '-' or Fecha == '':
+        telefono=texto_con_guiones(mensaje)
+        if len(telefono) != 10 or telefono[2] != '-' or telefono[5] != '-' or telefono == '':
             print('La fecha debe cumplir con el formato dd-mm-aaaa y no puede estar vacio!!!')
         else:
-            return Fecha
+            return telefono
 #___________________________________________________________________________________________________________________________
 def validar_anio(mensaje):
     while True:
@@ -142,3 +142,10 @@ def s_n(mensaje):
         else:
             print('ERROR: Solo se acepta Si o No como respuesta!!!')
 #___________________________________________________________________________________________________________________________
+def validar_numero_t(mensaje):
+    while True:
+        telefono=input(mensaje)
+        if len(telefono) != 14 or telefono[0] != '+' or telefono[4] != '-' or telefono[9] != '-' or telefono == '' or any(c.isalpha() for c in telefono):
+            print('El numero debe cumplir con el formado +000-0000-0000 y no puede estar vacio!!!')
+        else:
+            return telefono
