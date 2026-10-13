@@ -1,3 +1,7 @@
+# Elaborado por: Denis Steve Arauz Orozco
+# Carrera: Ingenieria en sistemas
+# Grupo: #1
+
 # Clase pila 
 class Pila:
     """
@@ -53,7 +57,7 @@ def parentesis_balanceados(expresion):
 # PRUEBAS DE LA FUNCIÓN
 # ============================
 
-ejemplos = [
+ejem = [
     "(a + b) * (c - d)",   # balanceado
     "((x + y) * z)",       # balanceado
     "((a + b)",            # falta un cierre
@@ -61,7 +65,7 @@ ejemplos = [
     "((())))"              # cierres extra
 ]
 
-for i in ejemplos:
+for i in ejem:
     print(f"Expresión: {i} = {parentesis_balanceados(i)}")
 
 # Eleborado por: Denis Steve Arauz Orozco

@@ -149,3 +149,7 @@ def validar_numero_t(mensaje):
             print('El numero debe cumplir con el formado +000-0000-0000 y no puede estar vacio!!!')
         else:
             return telefono
+#___________________________________________________________________________________________________________________________
+# Elaborado por: Denis Steve Arauz Orozco
+# Carrera: Ingenieria en sistemas
+# Grupo: #1

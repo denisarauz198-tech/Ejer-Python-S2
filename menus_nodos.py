@@ -1,3 +1,7 @@
+# Elaborado por: Denis Steve Arauz Orozco
+# Carrera: Ingenieria en sistemas
+# Grupo: #1
+
 import Funciones_Proyecto as fp
 import Nodos as nd, time as tm
 lista = nd.ListaEnlazada()

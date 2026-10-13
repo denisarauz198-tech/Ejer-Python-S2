@@ -1,3 +1,7 @@
+# Elaborado por: Denis Steve Arauz Orozco
+# Carrera: Ingenieria en sistemas
+# Grupo: #1
+
 import numpy as np
 
 #  Clases para la estructura de un nodo y una lista  enlazada
